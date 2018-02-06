@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class GoogleTest {
-   public WebDriver driver;
+    private WebDriver driver;
 
 
    @Test
@@ -22,7 +22,7 @@ public class GoogleTest {
        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
        driver.manage().window().maximize();
        driver.get(baseUrl);
-       System.out.println("Chrome works");
+       System.out.println("Chrome works and browser opened");
 
    }
 }
