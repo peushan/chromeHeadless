@@ -15,7 +15,7 @@ public class GoogleTest {
    public void luanchBrowser(){
        System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
        ChromeOptions options = new ChromeOptions();
-       options.addArguments("headless");
+       //options.addArguments("headless");
        options.addArguments("window-size=1400,600");
        driver = new ChromeDriver(options);
        String baseUrl = "https://www.google.com/";
